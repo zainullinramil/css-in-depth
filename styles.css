@@ -123,3 +123,9 @@ a:active {
         font-size: 1em;
     }
 }
+
+.square {
+    width: 90vmin;
+    height: 90vmin;
+    background-color: #369;
+}
