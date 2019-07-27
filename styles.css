@@ -1,7 +1,41 @@
-body {
-    line-height: 1.2;
+:root {
+    font-family: Helvetica, Arial, sans-serif;
+    --brand-color: #369;
 }
 
-.about-us {
-    font-size: 2em;
+p {
+    font-family: var(--main-font, sans-serif);
+    color: var(--brand-color, blue);
+}
+
+:root {
+    font-size: calc(0.5em + 1vw);
+    --main-bg: #fff;
+    --main-color: #000;
+    --main-font: Helvetica, Arial, sans-serif;
+    --brand-color: #369;
+}
+
+.panel {
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    border-radius: 0.5em;
+    background-color: var(--main-bg);
+    color: var(--main-color, blue);
+}
+
+.panel > h2 {
+    max-resolution: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dark {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #999;
+    --main-bg: #333;
+    --main-color: #fff;
 }

@@ -7,11 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <p class="about-us">
+    <div class="panel">
+        <h2>Моносорта</h2>
+        <div class="body">
             Мы сотрудничаем с небольшими плантациями по всему миру, чтобы собирать зерна в пик сезона. Затем мы тщательно
             поджариваем зерна небольшими партиями, чтобы максимально раскрыть их потенциал.
-        </p>
-    </main>
+        </div>
+    </div>
+    <aside class="dark">
+        <div class="panel">
+            <h2>Моносорта</h2>
+            <div class="body">
+                Мы сотрудничаем с небольшими плантациями по всему миру, чтобы собирать зерна в пик сезона. Затем мы тщательно
+                поджариваем зерна небольшими партиями, чтобы максимально раскрыть их потенциал.
+            </div>
+        </div>
+    </aside>
+    <script type="text/javascript">
+        let rootElement = document.documentElement;
+        let styles = getComputedStyle(rootElement);
+        let mainColor = styles.getPropertyValue('--main-bg');
+        console.log(String(mainColor).trim());
+        rootElement.style.setProperty('--main-bg', '#cdf')
+
+    </script>
 </body>
 </html>
