@@ -7,29 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="panel">
-        <h2>Моносорта</h2>
-        <div class="body">
-            Мы сотрудничаем с небольшими плантациями по всему миру, чтобы собирать зерна в пик сезона. Затем мы тщательно
-            поджариваем зерна небольшими партиями, чтобы максимально раскрыть их потенциал.
-        </div>
-    </div>
-    <aside class="dark">
-        <div class="panel">
-            <h2>Моносорта</h2>
-            <div class="body">
-                Мы сотрудничаем с небольшими плантациями по всему миру, чтобы собирать зерна в пик сезона. Затем мы тщательно
-                поджариваем зерна небольшими партиями, чтобы максимально раскрыть их потенциал.
-            </div>
-        </div>
-    </aside>
-    <script type="text/javascript">
-        let rootElement = document.documentElement;
-        let styles = getComputedStyle(rootElement);
-        let mainColor = styles.getPropertyValue('--main-bg');
-        console.log(String(mainColor).trim());
-        rootElement.style.setProperty('--main-bg', '#cdf')
-
-    </script>
+    <header>
+        <h1>Бегущий город</h1>
+    </header>
+    <fiv class="container">
+        <main class="main">
+            <h2>Прибегайте!</h2>
+            <p>
+                Начало мероприятия "Бегущий город" в субботу в 10:00
+                на площади Ленина. Маршрут будет представлен перед началом пробега, расстояние около 10 км.
+            </p>
+        </main>
+        <aside class="sidebar">
+            <div class="widget"></div>
+            <div class="widget"></div>
+            <div class="gizmo"></div>
+        </aside>
+    </fiv>
 </body>
 </html>
