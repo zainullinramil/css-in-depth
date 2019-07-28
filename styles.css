@@ -23,26 +23,17 @@ main {
     display: block;
 }
 
-.wrapper {
-    margin-left: -1em;
-    margin-right: -1em;
-}
-
 .container {
-    display: table;
-    width: 100%;
-    border-spacing: 1em 0;
+    display: flex;
 }
 
 .main {
-    display: table-cell;
     width: 70%;
     background-color: #fff;
     border-radius: .5em;
 }
 
 .sidebar {
-    display: table-cell;
     width: 30%;
     margin-left: 1.5em;
     padding: 1.5em;
