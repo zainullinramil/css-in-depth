@@ -70,4 +70,32 @@ body * + * {
 
 .column-sidebar {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-sidebar > .tile {
+    flex: 1;
+}
+
+.login-form h3 {
+    margin: 0;
+    font-size: .9em;
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.login-form input:not([tupe=checkbox]):not([type=radio]) {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+}
+
+.login-form button {
+    margin-top: 1em;
+    border: 1em solid #cc6b5a;
+    background-color: white;
+    padding: .5em 1em;
+    cursor: pointer;
 }
